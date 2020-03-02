@@ -2,11 +2,11 @@ package main;
 
 import java.util.Objects;
 
-public class Creator {
+public class Personne {
     private String lastName;
     private String firstName;
 
-    public Creator(String lastName, String firstName) {
+    public Personne(String lastName, String firstName) {
         this.lastName = lastName;
         this.firstName = firstName;
     }
@@ -21,9 +21,9 @@ public class Creator {
 
     @Override
     public boolean equals(Object o) {
-        Creator creator = (Creator) o;
-        return Objects.equals(lastName, creator.lastName) &&
-                Objects.equals(firstName, creator.firstName);
+        Personne personne = (Personne) o;
+        return Objects.equals(lastName, personne.lastName) &&
+                Objects.equals(firstName, personne.firstName);
     }
 
     @Override
@@ -34,7 +34,6 @@ public class Creator {
     @Override
     public String
     toString() {
-        return "Creator{" + lastName + " " + firstName +
-                '}';
+        return "Creator{" + lastName + " " + firstName + '}';
     }
 }
